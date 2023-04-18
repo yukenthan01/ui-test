@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #FFF7E6
+}
+
+header {
+    background-color: #ffbb36;
+    color: #fff;
+    height: 45px;
+    display: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    width: 80%;
+}
+
+.heading {
+    padding: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.title {
+    float: left;
+    font-weight: bold;
+    text-shadow: 2px 2px #daa02e;
+}
+
+.subtitle {
+    float: right;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 7px;
+    /* display: inline-block; */
+    top: -68%;
+    position: relative;
+}
+
+.logo img {
+    width: 65px;
+    margin-top: 13px;
+}
+
+.line {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #EDE6D6;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-family: 'Gotham-XLight';
+    color: #929292;
+}
+
+.line span {
+    background: #FFF7E6;
+    padding: 0 10px;
+}
+.title-section{
+    width: 55%;
+    max-width: 800px;
+    margin-bottom: 2em;
+    margin-top: 60px;
+}
+.card {
+    background: #FFFFFF;
+    height: 150px;
+    width: 100%;
+    box-shadow: 10px 10px #EDE6D6;
+    border-radius: 5px;
+    margin-bottom: 28px;
+}
+
+.parallelogram {
+    width: 150px;
+    height: 30px;
+    background: #8CCC4E ;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%);
+    float: right;
+    text-align: center;
+}
+.parallelogram p{
+    text-align: center;
+    margin: 6px;
+    color: #FFFFFF;
+    font-family: "Gotham-Medium";
+}
+.parallelogram p span::before{
+    content: ' ';
+    white-space: pre;
+}
+.product-img {
+    float: left;
+    display: block;
+    margin: 30px 20px 30px 30px;
+}
+.img {
+    height: 100px;
+    width: 100px;
+}
+
+.text {
+    float: left;
+    margin-top: 19px;
+    width: 71%;
+    text-align: left;
+}
+.item-tittle{
+    color: #929292;  
+    font-family: "Gotham-Bold";
+}
+.item-tittle span{
+    color: #C9C9C9;
+    font-family: Gotham-XLight;
+}
+.text p{
+    color: #333333;
+    font-size: small;
+}
+.content {
+    padding-left: 20px;
+}
+.description p{
+    color: #B2B2B2;
+    text-align: justify;
+    font-family: "Gotham-Book";
+}
+.item-price {
+    padding-top: 30px;
+    width: 10%;
+    float: right;
+    margin-right: -5px;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    margin: 0% auto; 
+    height: 510px;
+    max-width: 320px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 320px; 
+}
+
+.pop-content{
+    margin: 10px;
+    background-color: bisque;
+    height: 525px;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.pop-img{
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    border: solid white 2px;
+    margin: 20px;
+}
+.pop-content img{
+    height: 180px;
+    width: 180px;
+}
+.pop-title{
+    font-weight: 800;
+}
+.pop-content h2 {
+    display: flex;
+    flex-direction: row;
+}
+.pop-content h2:before, h2:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+.pop-content h2:before {
+    margin-right: 10px
+}
+.pop-content h2:after {
+    margin-left: 10px
+}
+.pop-description{
+    background-color: aliceblue;
+    max-height: 150px;
+    border-radius: 20px;
+    height: auto;
+}
+.pop-buy{
+    width: 100%;
+    height: 30px;
+    background-color:#8CCC4E;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.pop-price {
+    display: inline-block;
+    width: auto;
+    height: 38px;
+    background-color: #8CCC4E;
+    -webkit-border-radius: 3px 4px 4px 3px;
+    -moz-border-radius: 3px 4px 4px 3px;
+    border-radius: 3px 4px 4px 3px;
+    border-left: 1px solid #8CCC4E;
+    margin-left: 19px;
+    color: white;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    padding: 0 10px 0 10px;
+    
+    position: absolute;
+    top: 5%;
+    left: 54%;
+    rotate: -20deg;
+}
+
+
+.pop-price:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -19px;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-right: 19px solid #8CCC4E;
+}
+
+.pop-price:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: -9px;
+    top: 17px;
+}
+.pop-tag{
+    text-align: right;
+    height: 0px;
+}
+
+.location-img{
+    height: 20px !important;
+    width: 20px !important;
+    float: left;
+    margin-right: 0px;
+}
+.pop-location{
+    background: sandybrown;
+    border-radius: 15px;
+    width: 150px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 5px;
+    color: wheat;
+}
+.des-text{
+    padding: 10px;
+}
+.pop-loc{
+    margin-left: -21px;
+}
+.icon-location{
+    text-align: center;
+}
+.modal{
+    overflow: auto;
+}

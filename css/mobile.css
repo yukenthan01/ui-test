@@ -1,0 +1,137 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media  (max-width: 321px) {
+    main{
+        display: inline-flex;
+    }
+    .heading .title{
+        margin-top:2px;
+    }
+    .heading .subtitle{
+        float: left;
+        position: absolute;
+        top: 15px;
+        right: 21px;
+ 
+    }
+    .modal{
+        overflow: auto;
+    }
+    .title-section{
+        margin-top: 0px;
+    }
+    header .logo{
+        float: right;
+        margin-right: 10px
+    }
+    .product-img{
+        margin: 0px;
+    }
+    .product-img .img{
+        
+        margin: 22px;
+    }
+    
+    .item-price{
+        padding-top : 6px;
+    }
+    .text{
+        margin-top: 23px;
+    }
+    .description .content{
+        margin: 5px;
+    }
+    .card{
+        height: auto;
+    }
+    
+}
+@media  (min-width: 321px ) and (orientation:landscape) {
+    .pop-price{
+        position: relative;
+        left: 3%;
+        rotate: -13deg;
+    }
+    .modal{
+        overflow: auto;
+    }
+}
+
+@media  (max-width: 481px) {
+    main{
+        display: inline-flex;
+    }
+    .heading .title{
+        margin-top: -4px;
+    }
+    .heading .subtitle{
+        float: left;
+        position: absolute;
+        top: 23px;
+        left: 41px;
+ 
+    }
+    .title-section{
+        margin-top: 0px;
+    }
+    header .logo{
+        float: right;
+        margin-right: 10px
+    }
+    .product-img{
+        margin: 0px;
+    }
+    .product-img .img{
+        margin-top: 49px;
+    }
+    .item-price{
+        padding-top : 6px;
+    }
+    .text{
+        margin-top: 0px;
+        width: 65%;
+    }
+    .description .content{
+        margin: 5px;
+    }
+    .card{
+        height: auto;
+        padding: 7px;
+    }
+    
+}
+@media screen and (orientation:landscape) and (max-width: 481px) {
+    .text{
+        margin-top: -22px;
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+    .title-section{
+        margin-top: 51px;
+    }
+    header  .logo{
+        
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: stretch;
+        align-content: center;
+        position: absolute;
+    }
+    .description .content {
+        margin: 5px;
+    }
+    .card .text{
+        
+    margin-top: -15px;
+    }
+    .card .item-price{
+        padding-top: 7px;
+    }
+
+}
+
